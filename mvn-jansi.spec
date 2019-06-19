@@ -4,7 +4,7 @@
 #
 Name     : mvn-jansi
 Version  : 1.17.1
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
 Source0  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
 Source1  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
