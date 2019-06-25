@@ -4,7 +4,7 @@
 #
 Name     : mvn-jansi
 Version  : 1.17.1
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
 Source0  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
 Source1  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
@@ -33,11 +33,11 @@ data components for the mvn-jansi package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
 
 
 %files
@@ -45,6 +45,6 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/ja
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1/jansi-1.17.1.pom
+/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
 /usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
-/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-project-1.17.1.pom
+/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.pom
