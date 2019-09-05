@@ -4,17 +4,20 @@
 #
 Name     : mvn-jansi
 Version  : 1.17.1
-Release  : 6
+Release  : 7
 URL      : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
 Source0  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
-Source1  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.12/jansi-project-1.12.pom
-Source2  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.14/jansi-project-1.14.pom
-Source3  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
-Source4  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
-Source5  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.pom
-Source6  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
-Source7  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.14/jansi-1.14.pom
-Source8  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.pom
+Source1  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.11/jansi-project-1.11.pom
+Source2  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.12/jansi-project-1.12.pom
+Source3  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.14/jansi-project-1.14.pom
+Source4  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
+Source5  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar
+Source6  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.pom
+Source7  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
+Source8  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.pom
+Source9  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
+Source10  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.14/jansi-1.14.pom
+Source11  : https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -42,29 +45,38 @@ data components for the mvn-jansi package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.11
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.11/jansi-project-1.11.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.12
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.12/jansi-project-1.12.pom
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.12/jansi-project-1.12.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.14
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.14/jansi-project-1.14.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.14/jansi-project-1.14.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.11
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.11
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.11/jansi-1.11.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12/jansi-1.12.pom
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12/jansi-1.12.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14/jansi-1.14.pom
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14/jansi-1.14.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.pom
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.pom
 
 
 %files
@@ -72,9 +84,12 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/fusesource/jansi/ja
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.11/jansi-project-1.11.pom
 /usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.12/jansi-project-1.12.pom
 /usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.14/jansi-project-1.14.pom
 /usr/share/java/.m2/repository/org/fusesource/jansi/jansi-project/1.17.1/jansi-project-1.17.1.pom
+/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar
+/usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.11/jansi-1.11.pom
 /usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
 /usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.12/jansi-1.12.pom
 /usr/share/java/.m2/repository/org/fusesource/jansi/jansi/1.14/jansi-1.14.jar
